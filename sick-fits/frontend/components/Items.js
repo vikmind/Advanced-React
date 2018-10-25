@@ -17,6 +17,8 @@ const ALL_ITEMS_QUERY = gql`
   }
 `;
 
+export { ALL_ITEMS_QUERY };
+
 const Center = styled.div`
   text-align: center;
 `;
