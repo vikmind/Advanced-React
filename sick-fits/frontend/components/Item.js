@@ -6,6 +6,7 @@ import Title from './styles/Title';
 import ItemStyles from './styles/ItemStyles';
 import PriceTag from './styles/PriceTag';
 import formatMoney from '../lib/formatMoney';
+import DeleteItem from './DeleteItem';
 
 class Item extends Component {
   render() {
@@ -27,7 +28,7 @@ class Item extends Component {
             query: { id: item.id },
           }}><a>Edit</a></Link>
           <button>Add to Cart</button>
-          <button>Delete</button>
+          <DeleteItem id={ item.id }>Delete</DeleteItem>
         </div>
       </ItemStyles>
     );
