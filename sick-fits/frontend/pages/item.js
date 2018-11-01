@@ -1,8 +1,8 @@
-import Item from '../components/Item';
+import SingleItem from '../components/SingleItem';
 
 const ItemPage = props => (
   <div>
-    { props.query.id }
+    <SingleItem id={ props.query.id }/>
   </div>
 )
 
